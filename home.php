@@ -45,34 +45,34 @@ include 'components/add_cart.php';
 
          <div class="swiper-slide slide">
             <div class="content">
-               <span>order online</span>
-               <h3>delicious pizza</h3>
+               <span>Order Online</span>
+               <h3>Delicious Chicken Biryani</h3>
                <a href="menu.html" class="btn">see menus</a>
             </div>
             <div class="image">
-               <img src="images/home-img-1.png" alt="">
+               <img src="images/chickenb.png" alt="">
             </div>
          </div>
 
          <div class="swiper-slide slide">
             <div class="content">
-               <span>order online</span>
-               <h3>chezzy hamburger</h3>
+               <span>Order Online</span>
+               <h3>Delicious Beef Biryani</h3>
                <a href="menu.html" class="btn">see menus</a>
             </div>
             <div class="image">
-               <img src="images/home-img-2.png" alt="">
+               <img src="images/beefb.png" alt="">
             </div>
          </div>
 
          <div class="swiper-slide slide">
             <div class="content">
-               <span>order online</span>
-               <h3>rosted chicken</h3>
+               <span>Order Online</span>
+               <h3>Delicious Beef Kebab</h3>
                <a href="menu.html" class="btn">see menus</a>
             </div>
             <div class="image">
-               <img src="images/home-img-3.png" alt="">
+               <img src="images/beefk.png" alt="">
             </div>
          </div>
 
