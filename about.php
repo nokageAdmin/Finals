@@ -36,8 +36,8 @@ if(isset($_SESSION['user_id'])){
 <!-- header section ends -->
 
 <div class="heading">
-   <h3>about us</h3>
-   <p><a href="home.php">home</a> <span> / about</span></p>
+   <h3>About Us</h3>
+   <p><a href="home.php">Home</a> <span> / About</span></p>
 </div>
 
 <!-- about section starts  -->
@@ -47,12 +47,14 @@ if(isset($_SESSION['user_id'])){
    <div class="row">
 
       <div class="image">
-         <img src="images/about-img.svg" alt="">
+         <img src="images/eplogo.png" alt="">
       </div>
 
       <div class="content">
-         <h3>why choose us?</h3>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, neque debitis incidunt qui ipsum sed doloremque a molestiae in veritatis ullam similique sunt aliquam dolores dolore? Quasi atque debitis nobis!</p>
+         <h3>Why Eat Persia?</h3>
+         <p>Eating at Eats Persia, a Persian restaurant, offers a unique culinary experience that blends rich flavors, cultural heritage, and exceptional hospitality. Persian cuisine is renowned for its diverse use of fresh herbs, fragrant spices, and a balance of sweet and savory flavors. Dishes such as kebabs, stews, and rice pilafs are meticulously prepared to deliver a delightful and authentic taste of Persia.
+
+         At Eats Persia, you'll not only savor delicious food but also immerse yourself in a warm and inviting atmosphere that reflects Persian culture. The restaurant's dedication to quality ingredients and traditional cooking techniques ensures an unforgettable dining experience. Whether you're exploring new cuisines or reminiscing about familiar flavors, Eats Persia is the perfect place to enjoy a memorable meal with friends and family.</p>
          <a href="menu.html" class="btn">our menu</a>
       </div>
 
@@ -65,55 +67,34 @@ if(isset($_SESSION['user_id'])){
 <!-- steps section starts  -->
 
 <section class="steps">
-
-   <h1 class="title">simple steps</h1>
+    
+   <h1 class="title">Owner of Eat Persia</h1>
 
    <div class="box-container">
 
       <div class="box">
-         <img src="images/step-1.png" alt="">
-         <h3>choose order</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, dolorem.</p>
-      </div>
-
-      <div class="box">
-         <img src="images/step-2.png" alt="">
-         <h3>fast delivery</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, dolorem.</p>
-      </div>
-
-      <div class="box">
-         <img src="images/step-3.png" alt="">
-         <h3>enjoy food</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, dolorem.</p>
+         <img src="images/opic.png" alt="">
+         <h3>Mavy Atienza </h3>
       </div>
 
    </div>
 
 </section>
 
-<!-- steps section ends -->
 
 <!-- reviews section starts  -->
 
 <section class="reviews">
 
-   <h1 class="title">customer's reivews</h1>
+   <h1 class="title">Staff of Eat Persia</h1>
 
    <div class="swiper reviews-slider">
 
       <div class="swiper-wrapper">
 
          <div class="swiper-slide slide">
-            <img src="images/pic-1.png" alt="">
+            <img src="images/st1.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
-            </div>
             <h3>john deo</h3>
          </div>
 
@@ -143,45 +124,6 @@ if(isset($_SESSION['user_id'])){
             <h3>john deo</h3>
          </div>
 
-         <div class="swiper-slide slide">
-            <img src="images/pic-4.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-         </div>
-
-         <div class="swiper-slide slide">
-            <img src="images/pic-5.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-         </div>
-
-         <div class="swiper-slide slide">
-            <img src="images/pic-6.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-         </div>
-
       </div>
 
       <div class="swiper-pagination"></div>
@@ -192,32 +134,9 @@ if(isset($_SESSION['user_id'])){
 
 <!-- reviews section ends -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- footer section starts  -->
 <?php include 'components/footer.php'; ?>
 <!-- footer section ends -->=
-
-
-
-
-
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 

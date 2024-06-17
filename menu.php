@@ -79,45 +79,6 @@ include 'components/add_cart.php';
    </div>
 
 </section>
-
-
-<!-- menu section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- footer section starts  -->
-<?php include 'components/footer.php'; ?>
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
 <script src="js/script.js"></script>
 
 </body>

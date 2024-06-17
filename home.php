@@ -92,11 +92,6 @@ include 'components/add_cart.php';
 
       <a href="category.php?category=fast food" class="box">
          <img src="images/cat-1.png" alt="">
-         <h3>fast food</h3>
-      </a>
-
-      <a href="category.php?category=main dish" class="box">
-         <img src="images/cat-2.png" alt="">
          <h3>main dishes</h3>
       </a>
 
@@ -106,7 +101,7 @@ include 'components/add_cart.php';
       </a>
 
       <a href="category.php?category=desserts" class="box">
-         <img src="images/cat-4.png" alt="">
+         <img src="images/cat-2.png" alt="">
          <h3>desserts</h3>
       </a>
 
@@ -158,22 +153,6 @@ include 'components/add_cart.php';
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php include 'components/footer.php'; ?>

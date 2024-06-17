@@ -62,7 +62,7 @@ if(isset($_POST['send'])){
 
 <div class="heading">
    <h3>contact us</h3>
-   <p><a href="home.php">home</a> <span> / contact</span></p>
+   <p><a href="home.php">Home</a> <span> / Contact</span></p>
 </div>
 
 <!-- contact section starts  -->
