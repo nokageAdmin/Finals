@@ -13,11 +13,13 @@
          <img src="images/clock-icon.png" alt="">
          <h3>Opening Hours</h3>
          <p>07:00am to 10:00pm</p>
+         <p>Monday to Sunday</p>
       </div>
 
       <div class="box">
          <img src="images/map-icon.png" alt="">
-         <h3>our address</h3>Brgy 2. M.H Del Pilar St., Batangas City Philippines</a>
+         <h3>our address</h3> 
+         <p> Brgy 2. M.H Del Pilar St., Batangas City Philippines </p>
       </div>
 
       <div class="box">
@@ -28,8 +30,6 @@
       </div>
 
    </section>
-
-   <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>Eat's Persia</span> | all rights reserved!</div>
 
 </footer>
 
