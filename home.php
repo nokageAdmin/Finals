@@ -90,19 +90,19 @@ include 'components/add_cart.php';
 
    <div class="box-container">
 
-      <a href="category.php?category=fast food" class="box">
+      <a href="category.php?category=main dish" class="box">
          <img src="images/cat-1.png" alt="">
-         <h3>main dishes</h3>
+         <h3>Main Dishes</h3>
       </a>
 
       <a href="category.php?category=drinks" class="box">
          <img src="images/cat-3.png" alt="">
-         <h3>drinks</h3>
+         <h3>Drinks</h3>
       </a>
 
       <a href="category.php?category=desserts" class="box">
          <img src="images/cat-2.png" alt="">
-         <h3>desserts</h3>
+         <h3>Desserts</h3>
       </a>
 
    </div>
@@ -131,7 +131,7 @@ include 'components/add_cart.php';
          <input type="hidden" name="image" value="<?= $fetch_products['image']; ?>">
          <a href="quick_view.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
          <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-         <img src="uploaded_img/<?= $fetch_products['image']; ?>" alt="">
+         <img src="../uploaded_img/<?= $fetch_products['image']; ?>" alt="">
          <a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
          <div class="name"><?= $fetch_products['name']; ?></div>
          <div class="flex">
