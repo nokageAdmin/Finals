@@ -57,7 +57,7 @@ if(isset($_GET['delete'])){
    <div class="box-container">
 
    <?php
-      $select_orders = $conn->prepare("SELECT * FROM `orders`");
+      $select_orders = $conn->prepare("SELECT * FROM `orders` where payment_status = 'pending' ORDER BY placed_on DESC ");
       $select_orders->execute();
       if($select_orders->rowCount() > 0){
          while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){

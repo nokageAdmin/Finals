@@ -47,14 +47,11 @@ if(!isset($admin_id)){
 
    <div class="box">
       <?php
-         $total_pendings = 0;
-         $select_pendings = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
-         $select_pendings->execute(['pending']);
-         while($fetch_pendings = $select_pendings->fetch(PDO::FETCH_ASSOC)){
-            $total_pendings += $fetch_pendings['total_price'];
-         }
+          $select_products = $conn->prepare("SELECT COUNT( * ) FROM `orders` Where payment_status = 'pending'");
+          $select_products->execute();
+          $numbers_of_products = $select_products->rowCount();
       ?>
-      <h3><?= $total_pendings; ?></h3>
+      <h3><?= $numbers_of_products; ?> order(s)</h3>
       <p>total pendings</p>
       <a href="placed_orders.php" class="btn">see orders</a>
    </div>
