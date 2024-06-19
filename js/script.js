@@ -17,11 +17,11 @@ window.onscroll = () =>{
    profile.classList.remove('active');
 }
 
-function fadeOut(){
-   setInterval(loader, 2000);
-}
+// function fadeOut(){
+//    setInterval(loader, 2000);
+// }
 
-window.onload = fadeOut;
+// window.onload = fadeOut;
 
 document.querySelectorAll('input[type="number"]').forEach(numberInput => {
    numberInput.oninput = () =>{
