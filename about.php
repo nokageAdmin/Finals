@@ -51,10 +51,15 @@ if(isset($_SESSION['user_id'])){
       </div>
 
       <div class="content">
-         <h3>Why Eat Persia?</h3>
-         <p>Eating at Eats Persia, a Persian restaurant, offers a unique culinary experience that blends rich flavors, cultural heritage, and exceptional hospitality. Persian cuisine is renowned for its diverse use of fresh herbs, fragrant spices, and a balance of sweet and savory flavors. Dishes such as kebabs, stews, and rice pilafs are meticulously prepared to deliver a delightful and authentic taste of Persia.
+         <h3>Why Eat at Eat's Persia: A Taste of Iranian Cuisine</h3>
+         <p>Visit Eat's Persia to experience a unique culinary adventure where the rich and varied flavors of Iranian cuisine are brought to life.</p>
 
-         At Eats Persia, you'll not only savor delicious food but also immerse yourself in a warm and inviting atmosphere that reflects Persian culture. The restaurant's dedication to quality ingredients and traditional cooking techniques ensures an unforgettable dining experience. Whether you're exploring new cuisines or reminiscing about familiar flavors, Eats Persia is the perfect place to enjoy a memorable meal with friends and family.</p>
+         <p>Authenticity is the foundation of every meal at Eat's Persia. Using only the finest and freshest ingredients, our menu offers age-old dishes that have been handed down through the centuries. Every mouthful delivers a genuine taste of Persia, from the fragrant rice to the tender kebabs.</p>
+
+         <p>Excellent Ratings and Loyal Customers
+         Take our word for it, but also consider the positive feedback and loyal customers we gained. Come dine with the happy diners who have made Eat's Persia their first choice for a top-notch Iranian meal.</p>
+
+         <p>Come and experience Eat's Persia, which offers a trip into the core of Iranian culture and food, rather than merely a meal. We can't wait to have you here!</p>
       </div>
 
    </div>

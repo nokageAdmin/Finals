@@ -47,18 +47,18 @@ if(!isset($admin_id)){
 
    <div class="box">
       <?php
-          $select_products = $conn->prepare("SELECT COUNT( * ) FROM `orders` Where payment_status = 'pending'");
+          $select_products = $conn->prepare("SELECT * FROM `orders` Where payment_status = 'pending'");
           $select_products->execute();
           $numbers_of_products = $select_products->rowCount();
       ?>
-      <h3><?= $numbers_of_products; ?> order(s)</h3>
+      <h3><?php echo $numbers_of_products; ?> order(s)</h3>
       <p>total pendings</p>
       <a href="placed_orders.php" class="btn">see orders</a>
    </div>
 
    <div class="box">
       <?php
-          $select_products = $conn->prepare("SELECT COUNT( * ) FROM `orders` Where payment_status = 'completed'");
+          $select_products = $conn->prepare("SELECT *  FROM `orders` Where payment_status = 'completed'");
           $select_products->execute();
           $numbers_of_products = $select_products->rowCount();
       ?>
