@@ -35,8 +35,8 @@ if(isset($_POST['submit'])){
          $message[] = 'please add your address!';
       }else{
          
-         $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price) VALUES(?,?,?,?,?,?,?,?)");
-         $insert_order->execute([$user_id, $name, $number, $email, $method, $address, $total_products, $total_price]);
+         $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, method, address, total_products, total_price) VALUES(?,?,?,?,?)");
+         $insert_order->execute([$user_id, $method, $address, $total_products, $total_price]);
 
          $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
          $delete_cart->execute([$user_id]);
@@ -125,11 +125,9 @@ if(isset($_POST['submit'])){
       <p><i class="fas fa-map-marker-alt"></i><span><?php if($fetch_profile['address'] == ''){echo 'please enter your address';}else{echo $fetch_profile['address'];} ?></span></p>
       <a href="update_address.php" class="btn">update address</a>
       <select name="method" class="box" required>
-         <option value="" disabled selected>select payment method --</option>
+         <option value="" disabled selected> payment method </option>
          <option value="cash on delivery">Cash</option>
-         <option value="credit card">Credit Card</option>
-         <option value="paytm">Gcash</option>
-         <option value="paypal">Paypal</option>
+         
       </select>
       <input type="submit" value="place order" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:var(--red); color:var(--white);" name="submit">
    </div>

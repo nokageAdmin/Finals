@@ -10,6 +10,8 @@ if(!isset($admin_id)){
    header('location:admin_login.php');
 };
 
+
+
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
    $delete_order = $conn->prepare("DELETE FROM `orders` WHERE id = ?");
@@ -25,7 +27,7 @@ if(isset($_GET['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>placed orders</title>
+   <title>completed orders</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -42,12 +44,12 @@ if(isset($_GET['delete'])){
 
 <section class="placed-orders">
 
-   <h1 class="heading">placed orders</h1>
+   <h1 class="heading">completed orders</h1>
 
    <div class="box-container">
 
    <?php
-      $select_orders = $conn->prepare("SELECT * FROM `orders` where payment_status = 'pending' ORDER BY placed_on DESC ");
+      $select_orders = $conn->prepare("SELECT * FROM `orders` where payment_status = 'completed' ORDER BY placed_on DESC ");
       $select_orders->execute();
       if($select_orders->rowCount() > 0){
          while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
@@ -63,9 +65,8 @@ if(isset($_GET['delete'])){
          <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
          <select name="payment_status" class="drop-down">
             <option value="" selected disabled><?= $fetch_orders['payment_status']; ?></option>
-            <option value="pending">pending</option>
+            <option value="completed">completed</option>
          </select>
-      
       </form>
    </div>
    <?php

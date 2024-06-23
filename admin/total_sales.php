@@ -10,6 +10,16 @@ if(!isset($admin_id)){
    header('location:admin_login.php');
 };
 
+if(isset($_POST['update_payment'])){
+
+   $order_id = $_POST['order_id'];
+   $payment_status = $_POST['payment_status'];
+   $update_status = $conn->prepare("UPDATE `orders` SET payment_status = ? WHERE id = ?");
+   $update_status->execute([$payment_status, $order_id]);
+   $message[] = 'payment status updated!';
+
+}
+
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
    $delete_order = $conn->prepare("DELETE FROM `orders` WHERE id = ?");
@@ -64,8 +74,12 @@ if(isset($_GET['delete'])){
          <select name="payment_status" class="drop-down">
             <option value="" selected disabled><?= $fetch_orders['payment_status']; ?></option>
             <option value="pending">pending</option>
+            <option value="completed">completed</option>
          </select>
-      
+         <div class="flex-btn">
+            <input type="submit" value="update" class="btn" name="update_payment">
+            <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('delete this order?');">delete</a>
+         </div>
       </form>
    </div>
    <?php
@@ -78,6 +92,16 @@ if(isset($_GET['delete'])){
    </div>
 
 </section>
+
+<!-- placed orders section ends -->
+
+
+
+
+
+
+
+
 
 <!-- custom js file link  -->
 <script src="../js/admin_script.js"></script>

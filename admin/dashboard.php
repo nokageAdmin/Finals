@@ -58,6 +58,17 @@ if(!isset($admin_id)){
 
    <div class="box">
       <?php
+          $select_products = $conn->prepare("SELECT COUNT( * ) FROM `orders` Where payment_status = 'completed'");
+          $select_products->execute();
+          $numbers_of_products = $select_products->rowCount();
+      ?>
+      <h3><?= $numbers_of_products; ?> order(s)</h3>
+      <p>total completes</p>
+      <a href="completed_orders.php" class="btn">see orders</a>
+   </div>
+
+   <div class="box">
+      <?php
          $total_completes = 0;
          $select_completes = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
          $select_completes->execute(['completed']);
@@ -66,7 +77,7 @@ if(!isset($admin_id)){
          }
       ?>
       <h3><?= $total_completes; ?></h3>
-      <p>total completes</p>
+      <p>total sales</p>
       <a href="placed_orders.php" class="btn">see orders</a>
    </div>
 
@@ -78,7 +89,7 @@ if(!isset($admin_id)){
       ?>
       <h3><?= $numbers_of_orders; ?></h3>
       <p>total orders</p>
-      <a href="placed_orders.php" class="btn">see orders</a>
+      <a href="total_sales.php" class="btn">see orders</a>
    </div>
 
    <div class="box">
